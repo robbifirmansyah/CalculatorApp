@@ -1,0 +1,596 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@color/white"
+    >
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/box"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:ignore="MissingConstraints"
+        app:layout_constraintBottom_toBottomOf="parent"
+        >
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/gd_ver_one_left"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_begin="20dp" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/gd_ver_one_right"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_begin="100dp" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/gd_ver_two_left"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_begin="116dp" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/gd_ver_two_right"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_begin="196dp" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/gd_ver_three_left"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_begin="212dp" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/gd_ver_three_right"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_begin="292dp" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/gd_ver_four_left"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_begin="308dp" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/gd_ver_four_right"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_begin="388dp" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/gd_hor_one_bottom"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_begin="710dp" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/gd_hor_one_top"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_begin="630dp" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/gd_hor_two_bottom"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_begin="614dp" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/gd_hor_two_top"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_begin="534dp" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/gd_hor_three_bottom"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_begin="518dp" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/gd_hor_three_top"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_begin="438dp" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/gd_hor_four_bottom"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_begin="422dp" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/gd_hor_four_top"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_begin="342dp" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/gd_hor_five_bottom"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_begin="326dp" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/gd_hor_five_top"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_begin="246dp" />
+
+        <Button
+            android:id="@+id/button_equal"
+            android:layout_width="80dp"
+            android:layout_height="176dp"
+            android:background="@drawable/button_background_orange"
+            android:text="@string/equal"
+            android:textColor="#FFFFFF"
+            app:backgroundTint="@null"
+            app:layout_constraintStart_toStartOf="@id/gd_ver_four_left"
+            app:layout_constraintEnd_toEndOf="@id/gd_ver_four_right"
+            app:layout_constraintTop_toTopOf="@id/gd_hor_two_top"
+            app:layout_constraintBottom_toBottomOf="@id/gd_hor_one_bottom"
+            android:fontFamily="@font/poppins_regular"
+            android:textStyle="bold"
+            android:translationZ="8dp"
+            android:stateListAnimator="@null"
+            android:elevation="5dp"
+            android:textSize="28sp"
+            />
+
+        <Button
+            android:id="@+id/button_percent"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:background="@drawable/button_background_white"
+            android:text="@string/percent"
+            android:textColor="#FF8F00"
+            app:backgroundTint="@null"
+            tools:ignore="MissingConstraints"
+            android:elevation="5dp"
+            app:layout_constraintStart_toStartOf="@id/gd_ver_two_left"
+            app:layout_constraintEnd_toEndOf="@id/gd_ver_two_right"
+            app:layout_constraintTop_toTopOf="@id/gd_hor_five_top"
+            app:layout_constraintBottom_toBottomOf="@id/gd_hor_five_bottom"
+            android:fontFamily="@font/poppins_regular"
+            android:textStyle="bold"
+            android:translationZ="8dp"
+            android:stateListAnimator="@null"
+            android:textSize="28sp"/>
+
+        <Button
+            android:id="@+id/button_multiply"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:background="@drawable/button_background_white"
+            android:text="@string/multiply"
+            android:textColor="#FF8F00"
+            app:backgroundTint="@null"
+            tools:layout_editor_absoluteX="308dp"
+            tools:layout_editor_absoluteY="246dp"
+            app:layout_constraintStart_toStartOf="@id/gd_ver_four_left"
+            app:layout_constraintEnd_toEndOf="@id/gd_ver_four_right"
+            app:layout_constraintTop_toTopOf="@id/gd_hor_five_top"
+            app:layout_constraintBottom_toBottomOf="@id/gd_hor_five_bottom"
+            android:fontFamily="@font/poppins_regular"
+            android:textStyle="bold"
+            android:translationZ="8dp"
+            android:stateListAnimator="@null"
+            android:elevation="5dp"
+            android:textSize="28sp"
+            />
+
+        <Button
+            android:id="@+id/button_clear"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:background="@drawable/button_background_orange"
+            android:elevation="5dp"
+            android:fontFamily="@font/poppins_regular"
+            android:text="@string/delete"
+            android:textColor="#FFFFFF"
+            android:textStyle="bold"
+            app:backgroundTint="@null"
+            app:layout_constraintBottom_toBottomOf="@id/gd_hor_five_bottom"
+            app:layout_constraintEnd_toEndOf="@id/gd_ver_one_right"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@id/gd_ver_one_left"
+            app:layout_constraintTop_toTopOf="@id/gd_hor_five_top"
+            app:layout_constraintVertical_bias="0.0"
+            android:translationZ="8dp"
+            android:stateListAnimator="@null"
+            android:textSize="21sp"/>
+
+        <Button
+            android:id="@+id/button_divide"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:background="@drawable/button_background_white"
+            android:text="@string/divide"
+            android:textColor="#FF8F00"
+            app:backgroundTint="@null"
+            tools:layout_editor_absoluteX="212dp"
+            tools:layout_editor_absoluteY="246dp"
+            app:layout_constraintStart_toStartOf="@id/gd_ver_three_left"
+            app:layout_constraintEnd_toEndOf="@id/gd_ver_three_right"
+            app:layout_constraintTop_toTopOf="@id/gd_hor_five_top"
+            app:layout_constraintBottom_toBottomOf="@id/gd_hor_five_bottom"
+            android:fontFamily="@font/poppins_regular"
+            android:textStyle="bold"
+            android:translationZ="8dp"
+            android:stateListAnimator="@null"
+            android:elevation="5dp"
+            android:textSize="19sp"
+            />
+
+        <Button
+            android:id="@+id/button_eight"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:background="@drawable/button_background_white"
+            android:text="@string/eight"
+            android:textColor="#FF8F00"
+            app:backgroundTint="@null"
+            app:layout_constraintStart_toStartOf="@id/gd_ver_two_left"
+            app:layout_constraintEnd_toEndOf="@id/gd_ver_two_right"
+            app:layout_constraintTop_toTopOf="@id/gd_hor_four_top"
+            app:layout_constraintBottom_toBottomOf="@id/gd_hor_four_bottom"
+            android:fontFamily="@font/poppins_regular"
+            android:textStyle="bold"
+            android:translationZ="8dp"
+            android:stateListAnimator="@null"
+            android:elevation="5dp"
+            android:textSize="28sp"
+            />
+
+        <Button
+            android:id="@+id/button_add"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:background="@drawable/button_background_white"
+            android:text="@string/add"
+            android:textColor="#FF8F00"
+            app:backgroundTint="@null"
+            app:layout_constraintStart_toStartOf="@id/gd_ver_four_left"
+            app:layout_constraintEnd_toEndOf="@id/gd_ver_four_right"
+            app:layout_constraintTop_toTopOf="@id/gd_hor_four_top"
+            app:layout_constraintBottom_toBottomOf="@id/gd_hor_four_bottom"
+            android:fontFamily="@font/poppins_regular"
+            android:textStyle="bold"
+            android:translationZ="8dp"
+            android:stateListAnimator="@null"
+            android:elevation="5dp"
+            android:textSize="28sp"
+            />
+
+        <Button
+            android:id="@+id/button_nine"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:background="@drawable/button_background_white"
+            android:text="@string/nine"
+            android:textColor="#FF8F00"
+            app:backgroundTint="@null"
+            app:layout_constraintStart_toStartOf="@id/gd_ver_three_left"
+            app:layout_constraintEnd_toEndOf="@id/gd_ver_three_right"
+            app:layout_constraintTop_toTopOf="@id/gd_hor_four_top"
+            app:layout_constraintBottom_toBottomOf="@id/gd_hor_four_bottom"
+            android:fontFamily="@font/poppins_regular"
+            android:textStyle="bold"
+            android:translationZ="8dp"
+            android:stateListAnimator="@null"
+            android:elevation="5dp"
+            android:textSize="28sp"
+            />
+
+        <Button
+            android:id="@+id/button_seven"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:background="@drawable/button_background_white"
+            android:text="@string/seven"
+            android:textColor="#FF8F00"
+            app:backgroundTint="@null"
+            app:layout_constraintStart_toStartOf="@id/gd_ver_one_left"
+            app:layout_constraintEnd_toEndOf="@id/gd_ver_one_right"
+            app:layout_constraintTop_toTopOf="@id/gd_hor_four_top"
+            app:layout_constraintBottom_toBottomOf="@id/gd_hor_four_bottom"
+            android:fontFamily="@font/poppins_regular"
+            android:textStyle="bold"
+            android:translationZ="8dp"
+            android:stateListAnimator="@null"
+            android:elevation="5dp"
+            android:textSize="28sp"
+            />
+
+        <Button
+            android:id="@+id/button_six"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:background="@drawable/button_background_white"
+            android:text="@string/six"
+            android:textColor="#FF8F00"
+            app:backgroundTint="@null"
+            app:layout_constraintStart_toStartOf="@id/gd_ver_three_left"
+            app:layout_constraintEnd_toEndOf="@id/gd_ver_three_right"
+            app:layout_constraintTop_toTopOf="@id/gd_hor_three_top"
+            app:layout_constraintBottom_toBottomOf="@id/gd_hor_three_bottom"
+            android:fontFamily="@font/poppins_regular"
+            android:textStyle="bold"
+            android:translationZ="8dp"
+            android:stateListAnimator="@null"
+            android:elevation="5dp"
+            android:textSize="28sp"/>
+
+        <Button
+            android:id="@+id/button_four"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:background="@drawable/button_background_white"
+            android:text="@string/four"
+            android:textColor="#FF8F00"
+            app:backgroundTint="@null"
+            app:layout_constraintStart_toStartOf="@id/gd_ver_one_left"
+            app:layout_constraintEnd_toEndOf="@id/gd_ver_one_right"
+            app:layout_constraintTop_toTopOf="@id/gd_hor_three_top"
+            app:layout_constraintBottom_toBottomOf="@id/gd_hor_three_bottom"
+            android:fontFamily="@font/poppins_regular"
+            android:textStyle="bold"
+            android:translationZ="8dp"
+            android:stateListAnimator="@null"
+            android:elevation="5dp"
+            android:textSize="28sp"
+            />
+
+        <Button
+            android:id="@+id/button_subtract"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:background="@drawable/button_background_white"
+            android:text="@string/subtract"
+            android:textColor="#FF8F00"
+            app:backgroundTint="@null"
+            app:layout_constraintStart_toStartOf="@id/gd_ver_four_left"
+            app:layout_constraintEnd_toEndOf="@id/gd_ver_four_right"
+            app:layout_constraintTop_toTopOf="@id/gd_hor_three_top"
+            app:layout_constraintBottom_toBottomOf="@id/gd_hor_three_bottom"
+            android:fontFamily="@font/poppins_regular"
+            android:textStyle="bold"
+            android:translationZ="8dp"
+            android:stateListAnimator="@null"
+            android:elevation="5dp"
+            android:textSize="28sp"
+            />
+
+        <Button
+            android:id="@+id/button_five"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:background="@drawable/button_background_white"
+            android:text="@string/five"
+            android:textColor="#FF8F00"
+            app:backgroundTint="@null"
+            app:layout_constraintStart_toStartOf="@id/gd_ver_two_left"
+            app:layout_constraintEnd_toEndOf="@id/gd_ver_two_right"
+            app:layout_constraintTop_toTopOf="@id/gd_hor_three_top"
+            app:layout_constraintBottom_toBottomOf="@id/gd_hor_three_bottom"
+            android:fontFamily="@font/poppins_regular"
+            android:textStyle="bold"
+            android:translationZ="8dp"
+            android:stateListAnimator="@null"
+            android:elevation="5dp"
+            android:textSize="28sp"/>
+
+        <Button
+            android:id="@+id/button_one"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:background="@drawable/button_background_white"
+            android:text="@string/one"
+            android:textColor="#FF8F00"
+            app:backgroundTint="@null"
+            app:layout_constraintStart_toStartOf="@id/gd_ver_one_left"
+            app:layout_constraintEnd_toEndOf="@id/gd_ver_one_right"
+            app:layout_constraintTop_toTopOf="@id/gd_hor_two_top"
+            app:layout_constraintBottom_toBottomOf="@id/gd_hor_two_bottom"
+            android:fontFamily="@font/poppins_regular"
+            android:textStyle="bold"
+            android:translationZ="8dp"
+            android:stateListAnimator="@null"
+            android:elevation="5dp"
+            android:textSize="28sp"
+            />
+
+        <Button
+            android:id="@+id/button_three"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:background="@drawable/button_background_white"
+            android:elevation="5dp"
+            android:stateListAnimator="@null"
+            android:text="@string/three"
+            android:textColor="#FF8F00"
+            android:translationZ="8dp"
+            app:backgroundTint="@null"
+            app:layout_constraintBottom_toBottomOf="@id/gd_hor_two_bottom"
+            app:layout_constraintEnd_toEndOf="@id/gd_ver_three_right"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@id/gd_ver_three_left"
+            app:layout_constraintTop_toTopOf="@id/gd_hor_two_top"
+            app:layout_constraintVertical_bias="0.0"
+            android:textSize="28sp"/>
+
+        <Button
+            android:id="@+id/button_two"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:background="@drawable/button_background_white"
+            android:text="@string/two"
+            android:textColor="#FF8F00"
+            app:backgroundTint="@null"
+            app:layout_constraintStart_toStartOf="@id/gd_ver_two_left"
+            app:layout_constraintEnd_toEndOf="@id/gd_ver_two_right"
+            app:layout_constraintTop_toTopOf="@id/gd_hor_two_top"
+            app:layout_constraintBottom_toBottomOf="@id/gd_hor_two_bottom"
+            android:fontFamily="@font/poppins_regular"
+            android:textStyle="bold"
+            android:translationZ="8dp"
+            android:stateListAnimator="@null"
+            android:elevation="5dp"
+            android:textSize="28sp"
+            />
+
+        <Button
+            android:id="@+id/button_zero"
+            android:layout_width="176dp"
+            android:layout_height="80dp"
+            android:background="@drawable/button_background_white"
+            android:text="@string/zero"
+            android:textColor="#FF8F00"
+            app:backgroundTint="@null"
+            app:layout_constraintStart_toStartOf="@id/gd_ver_one_left"
+            app:layout_constraintEnd_toEndOf="@id/gd_ver_two_right"
+            app:layout_constraintTop_toTopOf="@id/gd_hor_one_top"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:layout_marginBottom="20dp"
+            android:translationZ="8dp"
+            android:stateListAnimator="@null"
+            android:elevation="5dp"
+            android:fontFamily="@font/poppins_regular"
+            android:textStyle="bold"
+            android:textSize="28sp"
+            />
+
+        <Button
+            android:id="@+id/button_dot"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:background="@drawable/button_background_white"
+            android:text="@string/dot"
+            android:textColor="#FF8F00"
+            app:backgroundTint="@null"
+            app:layout_constraintStart_toStartOf="@id/gd_ver_three_left"
+            app:layout_constraintEnd_toEndOf="@id/gd_ver_three_right"
+            app:layout_constraintTop_toTopOf="@id/gd_hor_one_top"
+            app:layout_constraintBottom_toBottomOf="@id/gd_hor_one_bottom"
+            android:fontFamily="@font/poppins_regular"
+            android:textStyle="bold"
+            android:translationZ="8dp"
+            android:stateListAnimator="@null"
+            android:elevation="5dp"
+            android:textSize="28sp"
+            />
+
+        <ImageView
+            android:id="@+id/divide"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:contentDescription="@string/divider"
+            app:srcCompat="@drawable/divider"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteX="136dp"
+            tools:layout_editor_absoluteY="226dp"
+            app:layout_constraintTop_toTopOf="@id/gd_hor_six_top"
+            app:layout_constraintBottom_toBottomOf="@id/gd_hor_six_bottom"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/gd_hor_six_top"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_begin="222dp" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/gd_hor_six_bottom"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_begin="226dp" />
+
+        <EditText
+            android:id="@+id/operation_text"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:background="@android:color/transparent"
+            android:focusable="false"
+            android:focusableInTouchMode="false"
+            android:gravity="end"
+            android:textColor="@android:color/darker_gray"
+            android:fontFamily="@font/poppins_regular"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:minHeight="48dp"
+            tools:ignore="VisualLintTextFieldSize" />
+
+        <EditText
+            android:id="@+id/result_text"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:background="@android:color/transparent"
+            android:focusable="false"
+            android:focusableInTouchMode="false"
+            android:fontFamily="@font/poppins_regular"
+            android:gravity="end"
+            android:text="@string/default_result"
+            android:textColor="@android:color/black"
+            android:textSize="72sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/operation_text"
+            tools:ignore="DuplicateSpeakableTextCheck,VisualLintTextFieldSize" />
+
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/gd_hor_seven_bottom"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_begin="172dp" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/gd_hor_seven_top"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_begin="107dp" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
